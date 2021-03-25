@@ -1,0 +1,30 @@
+---
+layout: "layouts/simple.njk"
+title: "Vacatures"
+description: "Wij werven voor de volgende vacatures:"
+backgroundColor: "#e85c10"
+---
+   
+{% block postContent %}
+
+<div class="service-area spb">
+    <div class="container">
+        
+        <div class="row">
+
+            {% for vacature in collections.vacatures %}
+            <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon">
+                <i style="color: #ff689b;"></i>
+              </div>
+              <h4 class="vacature-titel"><a href="{{ vacature.data.url }}" style="color: #37b4ce">{{ vacature.data.title }}</a></h4>
+              <p class="description">{{ vacature.data.description }}</p>
+            </div>
+          </div>
+            {% endfor %}
+         </div>
+    </div>
+</div>   
+
+{% endblock postContent %}

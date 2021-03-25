@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/assets/img/thenextchapter.ico" />
+    <title>{{ settings.siteName }}</title>
+    <meta name="description" content="{{ settings.description }}" />
+
+    <link rel="home" href="https://thenextchapter.nl/" />
+	<link rel="canonical" href="https://thenextchapter.nl/">
+    
+        <!-- Required CSS files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/slicknav.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+</head>
+
+<body>
+    <div class="preloader">
+        <span class="preloader-spin"></span>
+    </div>
+    <div class="site">
+            <header style="background-color: #FFF7D8;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-3 logo-column">
+                        <a href="/" class="logo">
+                            <img decoding="async" src="/assets/img/tnclogo.png" height="100px" width="110px" alt="logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-9 nav-column clearfix">
+                        <div class="right-nav">
+                            
+                            <div class="header-social">
+                                {% for social in settings.socials %}
+                                    <a href="{{ social.url }}" target="_blank" rel="noreferrer noopener" class="fa fa-{{ social.name }}"></a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <nav id="menu" class="d-none d-lg-block">
+                            <ul>
+                                <li><a href="/vacature/">Vacatures</a></li>
+                                <li><a href="/services/recruitment-as-a-service/">Recruitment as a Service</a></li>
+                                <li><a href="/services//deta-vast/">Deta-vast</a></li>
+                                <li><a href="/projecten/">Relocation</a></li>
+                                <li class="has-child">
+                                    <a href="/about/">Over ons</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/blogs/">Nieuws</a></li>
+                                        <li><a href="/vacatures/">Werken bij</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header> 
+   
+{% block pageHeader %}
+      <div class="page-title sp" style="background:{{ backgroundColor }}; background-image: linear-gradient(90deg, #e85c10 0%, #F7CE68 92%)"> 
+      <div class="container text-center">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+      </div>
+      </div> 
+{% endblock pageHeader %}
+
+{% block content %}
+    {{ content | safe }}
+{% endblock content %}
+
+{% block postContent %}{% endblock postContent %}
+
+<div class="merkbeloften">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 merkbeloften_widget">
+                    <div class="inner">
+                        <h4>Ervaren specialisten</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 merkbeloften_widget">
+                    <div class="inner">
+                        <h4>Binnen 24u CV's</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 merkbeloften_widget">
+                    <div class="inner">
+                        <h4>Ontzorgen</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 merkbeloften_widget">
+                    <div class="inner">
+                        <h4>Transparantie</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 footer_widget">
+                    <div class="inner">
+                        <h4>Over ons</h4>
+                        <p>{{ settings.over }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer_widget">
+                    <div class="inner">
+                        <h4>Company</h4>
+                        <ul>
+                                <li><a href="/staffing/">Vacatures</a></li>
+                                <li><a href="/teamasaservice/">Recruitment as a Service</a></li>
+                                <li><a href="/projecten/">Relocation</a></li>
+                                <li class="has-child">
+                                    <a href="/about/">Over ons</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/blogs/">Nieuws</a></li>
+                                        <li><a href="/vacatures/">Werken bij</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer_widget">
+                    <div class="inner">
+                        <h4>Artikelen</h4>
+                        {% for blog in collections.blogs %}
+                        <div class="media">
+                            <a href="{{ blog.data.url }}">
+                                <img decoding="async" src="{{ blog.data.image }}" class="d-flex mr-3" alt="{{ blog.data.title }}" loading="lazy">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    <a href="{{ blog.data.url }}">{{ blog.data.description }}</a>
+                                </h5>
+                                <span>{{ blog.data.date }}</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer_widget">
+                    <div class="inner">
+                        <h4>Adres</h4>
+                        <h5>The Next Chapter B.V.</h5>
+                        <p>{{ settings.adres }} <br>{{ settings.postcode }}  <br>{{ settings.phone }}</p>
+                        <h5>Nemen jullie contact met mij op?</h5>
+                        <form action="#" netlify class="nw_form">
+                            <input placeholder="Jouw emailadres" type="email" name="email">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copyright-txt">
+                         2021 The Next Chapter
+                    </div>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <div class="footer-nav">
+                        <a href="/">Home</a>
+                        <a rel="nofollow" href="/sitemap/">Sitemap</a>
+                        <a rel="nofollow" href="/privacy/">Privacy</a>
+                        <a rel="nofollow" href="/algemeneVoorwaarden/">Algemene Voorwaarden</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+    </div>
+
+    <!--Required JS files-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+<script src="/assets/js/vendor/owl.carousel.min.js"></script>
+<script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+<script src="/assets/js/vendor/slicknav.min.js"></script>
+<script src="/assets/js/active.js"></script>
+
+</body>
+
+</html>

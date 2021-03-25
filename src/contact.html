@@ -1,0 +1,68 @@
+---
+layout: "base.njk"
+title: "Neem contact op"
+description: "Hier kun je contact met ons opnemen"
+backgroundImage: "/assets/img/bg.jpg"
+googleMap: "https://maps.google.com/maps?width=1900&amp;height=440&amp;hl=en&amp;q=bruistensingel%20120%2C%205232%20AC%2C%20den%20bosch+(Digital%20Tribes)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+---
+
+    <div class="contact-area sp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 contact-info">
+                <div class="single-info">
+                    <h5>Telefoon</h5>
+                    <p>{{ settings.phone }}</p>
+                </div>
+                <div class="single-info">
+                    <h5>Email</h5>
+                    <p>{{ settings.email }}</p>
+                </div>
+                <div class="single-info">
+                    <h5>Adres</h5>
+                    <p>{{ settings.adres }}</p>
+                    <p>{{ settings.postcode }}</p>
+                </div>
+                <div class="single-info">
+                    <h5>Social</h5>
+                    <p>
+                        {% for social in settings.socials %}
+                            <a href="{{ social.url }}" class="fa fa-{{ social.name }}"></a>
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <form action="#" name="contact-page" netlify class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="row">
+                        <p class="hidden" style="display:none">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
+                        <div class="col-lg-6">
+                            <input name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input name="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="col-lg-12">
+                            <input name="telefoon" type="tel" placeholder="Telefoonnummer">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea  name="bericht" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <input class="button" type="submit" value="Verstuur" style="background-color: #ce184a">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<div class="google-map">
+    <iframe src="{{ googleMap }} "></iframe>
+</div>    

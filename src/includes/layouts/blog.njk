@@ -1,0 +1,32 @@
+{% extends "layouts/simple.njk" %}
+
+{% block postContent %}
+
+<div class="service-area spb">
+    <div class="container">
+        
+        <div class="row">
+
+            {% for blog in collections.blogs %}
+            <div class="single-portfolio col-md-4">
+                <div class="inner">
+                    <div class="portfolio-img">
+                        <img style="border-radius: 10%;" decoding="async" src="{{ blog.data.image }}" alt="{{ blog.data.title }}" loading="lazy">
+                        <div class="hover-content">
+                            <div>
+                                <a href="{{ blog.data.url }}" class="button">Lees verder</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <a href="{{ blog.data.url }}"><h3>{{ blog.data.title }}</h3></a>
+                        <span>{{ blog.data.description }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+         </div>
+    </div>
+</div>   
+
+{% endblock postContent %}

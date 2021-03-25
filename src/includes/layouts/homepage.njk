@@ -1,0 +1,207 @@
+{% extends "base.njk" %}
+
+{% block pageHeader %}{% endblock pageHeader %}
+
+{% block content %}
+
+  <div class="jumbotron mb-0" style="background-color: #e85c10; background-image: linear-gradient(90deg, #e85c10 0%, #F7CE68 92%)";>
+            <div class="inner">
+                  <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="box">{{ digital.title }} 
+                                    <div class="word">
+                                        <span> {{ digital.developer1 }}</span> 
+                                        <span> {{ digital.developer2 }}</span>
+                                        <span> {{ digital.developer3 }}</span>
+                                        <span> {{ digital.developer4 }}</span> 
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                  </div>
+            </div>
+  </div>
+
+<!-- Pay off -->
+<div class="mb-0 spb" style="background-color: #e85c10; background-image: linear-gradient(90deg, #e85c10 0%, #F7CE68 92%); height: 200px;">
+    <div class="inner">
+    <div class="container">
+        <div class="page-title">
+        <h1 style="text-align: left; text-transform: uppercase;">The Next Chapter</h1>
+        <h1 class="spb" style="text-align: right;">Full Service Digital Recruitment Agency</h1>
+        </div>
+    </div>
+    </div>
+</div>
+<svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none" style="background-color: #e85c10; background-image: linear-gradient(90deg, #e85c10 0%, #F7CE68 92%); text-align: right;">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#FFF7D8">
+      </g>
+  </svg>
+
+  <div class="testimonial-area spt spb" style="background-color:#FFF7D8;">
+    <div class="container">
+        <div class="page-title">
+            <h2>{{ tribes.title }} </h2>
+            <p style="text-align: right;">{{ tribes.description }} </P>
+            <p>{{ tribes.description2 }} </P>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Cards  -->          
+<div class="cta">
+  <div class="container">
+          <div class="row justify-content-between mt-4">
+                <div class="card col-lg-4 col-sm-12">
+                    <img src="" class="card-img-top" alt=".">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ recruitment.title }}</h5>
+                        <p class="card-text">{{ recruitment.description }}</p>
+                        <a href="/" class="btn btn-info">Meer info</a>
+                      </div>
+                </div>
+
+                <div class="card col-lg-4 col-sm-12" style="height: 347px;">
+                    <img src="" class="card-img-top" alt=".">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ ws.title }}</h5>
+                        <p class="card-text">{{ ws.description }}</p>
+                        <a href="/" class="btn btn-info">Meer info</a>
+                      </div>
+                </div>
+                <div class="card col-lg-4 col-sm-12" style="height: 300px;">
+                    <img src="" class="card-img-top" alt=".">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ dv.title }}</h5>
+                        <p class="card-text">{{ dv.description }}</p>
+                        <a href="#" class="btn btn-info">Meer info</a>
+                      </div>
+                </div>
+          </div>
+  </div>
+</div>
+</div>
+<!-- ======= Services Section ======= -->
+    <div class="" style="background-color: #FFF7D8;">
+      <div class="container">
+
+        <div class="section-title">
+          <h5 style="color: #37b4ce">{{ werken.title }}</h5>
+          <p class="ondertitel">{{ werken.description }}</p>
+        </div>
+
+        <div class="row">
+          {% for vacature in collections.vacatures %}
+            {% if loop.index0 < 9 %}
+          <div class="col-lg-4 col-md-6" style="padding-top: 15px;">
+            <div class="icon-box">
+              <div class="icon">
+                <i style="color: #ff689b;"></i>
+              </div>
+              <h4 class="vacature-titel"><a href="{{ vacature.data.url }}" style="color: #37b4ce">{{ vacature.data.title }}</a></h4>
+              <p class="description">{{ vacature.data.description }}</p>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+                <a href="vacatures" class="cta-btn align-middle" aria-label="Alle artikelen">Alle vacatures</a>
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- End Services Section -->
+
+<div class="brand-area">
+        <div class="container">
+            <div class="page-title">
+              <h5 style="color: #37b4ce">{{ klanten.title }}</h5>
+              <p class="ondertitel">{{ klanten.description }}</p>
+            </div>
+                <div class="row d-flex align-items-center">
+                    {% for brand in collections.brands %}
+                      <div class="col-md-3 col-6 single-brand">
+                          <div class="inner">
+                            <img decoding="async" src="{{ brand.data.image }}" loading="lazy" alt="{{ brand.data.name }}">
+                          </div>
+                      </div>
+                    {% endfor %}
+                </div>
+        </div>
+</div>
+ 
+
+<!-- ======= Cta Section ======= -->
+    <div class="cta-ori">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 col-md-3 col-sm-6 text-center text-lg-left">
+            <p class="ondertitel">{{ cta.title }}</p> 
+            <p class="ondertitel">{{ cta.description }}</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 cta-btn-container text-center">
+            <a class="cta-btn align-middle" aria-label="Meer weten?" href="/contact/">Neem contact op</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Cta Section -->
+  
+ <div class="portfolio-area">
+    <div class="container">
+        <div class="section-title">
+            <h5 style="color: #37b4ce">{{ news.title }}</h5>
+            <p class="ondertitel">{{ news.description }}</p>
+        </div>
+        <div class="row">
+            {% for blog in collections.blogs %}
+            {% if loop.index0 < 3 %}
+            <div class="single-portfolio col-md-4">
+              <div class="icon-box">
+                <div class="inner">
+                    <div class="portfolio-img">
+                        <img style="border-radius: 10%;" decoding="async" src="{{ blog.data.image }}" loading="lazy" alt="{{ blog.data.name }}">
+                        <div class="hover-content">
+                            <div>
+                                <a href="{{ blog.data.url }}" aria-label="Lees verder" class="button">Lees verder</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="portfolio-content">
+                            <a href="{{ blog.data.url }}"><h3>{{ blog.data.title }}</h3></a>
+                            <span class="section-title">{{ blog.data.description }}</span>
+                        </div>
+                </div>
+              </div> 
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-12 cta-btn-container text-center" style="margin-bottom: 30px;">
+                <a href="blogs" class="cta-btn align-middle" aria-label="Alle artikelen">Alle artikelen</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ 
+{% endblock content %}

@@ -1,0 +1,19 @@
+{
+    "siteName": "Software developer of team inhuren",
+    "description": "Huur ervaren software developers in of huur een heel development team in. Staffing, Team as a Service en Projecten",
+    "phone": "+31 (0)73-2004544",
+    "email": "info@thenextchapter.nl",
+    "adres": "Bruistensingel 120",
+    "postcode": "5232 AC, 's-Hertogenbosch",
+    "socials": [
+        { 
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/company/thenextchapter/"
+        },
+        { 
+            "name": "twitter",
+            "url": "https://twitter.com/dutchrecruiter"
+        }
+    ],
+    "over": "The Next Chapter ontzorgt organisaties als ontwikkel- en beheerpartner op het gebied van web & app development en support."
+}
