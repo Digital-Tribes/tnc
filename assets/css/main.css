@@ -105,7 +105,10 @@ span {
 
 .bg2 {
   background-color: #fff; }
-
+.bg3 {
+  background-image: url("/assets/img/bg.jpg"); 
+  background-color: #cccccc;
+}
 .sp {
   padding-top: 90px;
   padding-bottom: 90px; }
