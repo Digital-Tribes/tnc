@@ -1,26 +1,45 @@
 {% extends "base.njk" %}
 
-{% block pageHeader %}{% endblock pageHeader %}
-
-
-
-<div class="page-title sp"> 
-      <div class="container text-center">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-      </div>
-      </div> 
-
 {% block content %}
-<div class="" style="background-color: #FFF7D8;">
-<div class="container sp">
-    <div class="row jusify-content-md-center">
-        <div class="col-md-10">
-           
-           {{ content | safe }}
-           
-             </div>
-    </div>
-</div>
-</div>
+<div class="bg3">
+    <div class="container sp">
+        <div class="row jusify-content-md-center">
+            <div class="col-md-7">
+            {{ content | safe }}
+            </div>
+        
+                    
+                        <div class="col-md-5">
+                        <h2 style="color:#717C7D;"> Neem contact op</h2>
+                            <form action="#" name="contact-page" netlify class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+                                <div class="row">
+                                    <p class="hidden" style="display:none">
+                                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                                    </p>
+                                    <div class="col-lg-6">
+                                        <input name="name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input name="email" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input name="telefoon" type="tel" placeholder="Telefoonnummer">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea  name="bericht" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input class="button" type="submit" value="Verstuur" style="background-color: #ce184a">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    
+        </div>
+</div>    
+
 {% endblock content %}
+

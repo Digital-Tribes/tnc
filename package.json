@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "clean-css": "^5.1.1"
+    "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^5.1.2"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

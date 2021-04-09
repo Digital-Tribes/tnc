@@ -55,47 +55,15 @@
             <h2>{{ tribes.title }} </h2>
             <p style="text-align: right;">{{ tribes.description }} </P>
             <p>{{ tribes.description2 }} </P>
-            
         </div>
     </div>
 </div>
 </div>
 
-<!-- Cards  -->          
-<div class="cta">
-  <div class="container">
-          <div class="row justify-content-between mt-4">
-                <div class="card col-lg-4 col-sm-12">
-                    <img src="" class="card-img-top" alt=".">
-                      <div class="card-body">
-                        <h5 class="card-title">{{ recruitment.title }}</h5>
-                        <p class="card-text">{{ recruitment.description }}</p>
-                        <a href="/" class="btn btn-info">Meer info</a>
-                      </div>
-                </div>
-
-                <div class="card col-lg-4 col-sm-12" style="height: 347px;">
-                    <img src="" class="card-img-top" alt=".">
-                      <div class="card-body">
-                        <h5 class="card-title">{{ ws.title }}</h5>
-                        <p class="card-text">{{ ws.description }}</p>
-                        <a href="/" class="btn btn-info">Meer info</a>
-                      </div>
-                </div>
-                <div class="card col-lg-4 col-sm-12" style="height: 300px;">
-                    <img src="" class="card-img-top" alt=".">
-                      <div class="card-body">
-                        <h5 class="card-title">{{ dv.title }}</h5>
-                        <p class="card-text">{{ dv.description }}</p>
-                        <a href="#" class="btn btn-info">Meer info</a>
-                      </div>
-                </div>
-          </div>
-  </div>
-</div>
-</div>
 <!-- ======= Services Section ======= -->
-    <div class="" style="background-color: #FFF7D8;">
+
+
+    <div style="background-color: #FFF7D8;">
       <div class="container">
 
         <div class="section-title">
@@ -106,6 +74,7 @@
         <div class="row">
           {% for vacature in collections.vacatures %}
             {% if loop.index0 < 9 %}
+            
           <div class="col-lg-4 col-md-6" style="padding-top: 15px;">
             <div class="icon-box">
               <div class="icon">
@@ -119,7 +88,7 @@
           {% endfor %}
         </div>
         <div class="row">
-            <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+            <div class="col-12 cta-btn-container text-center" style="margin-top: 30px; margin-bottom: 30px;">
                 <a href="vacatures" class="cta-btn align-middle" aria-label="Alle artikelen">Alle vacatures</a>
             </div>
         </div>
@@ -127,6 +96,67 @@
     </section>
   
     <!-- End Services Section -->
+
+
+<section class="ftco-section ftco-no-pt ftco-services" id="services-section" style="background-color:#FFF7D8;">
+  <div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-4 py-5 nav-link-wrap">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-ideas"></span> {{ services.title }}</a>
+              <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> {{ services.title1 }}</a>
+              <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-analysis"></span> {{ services.title2 }}</a>
+              <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-web-design"></span> {{ services.title3 }}</a>
+            </div>
+        </div>
+        <div class="col-md-8 p-4 p-md-5 d-flex align-items-center">
+          <div class="tab-content pl-md-5" id="v-pills-tabContent">
+            <div class="tab-pane fade show active py-5" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+              <span class="icon mb-3 d-block flaticon-ideas"></span>
+                <h2 class="mb-4" style="color: #717C7D;">{{ services.title }}</h2>
+                <p>{{ services.description }}</p>
+                <div class="row">
+                    <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+                        <a href="/services/recruitment-as-a-service/" class="cta-btn align-middle" aria-label="Recruitment as a Service">Lees verder</a>
+                    </div>
+                </div>
+            </div>
+          <div class="tab-pane fade py-5" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+            <span class="icon mb-3 d-block flaticon-flasks"></span>
+              <h2 class="mb-4" style="color: #717C7D;">{{ services.title1 }}</h2>
+              <p>{{ services.description1 }}</p>
+              <div class="row">
+                    <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+                        <a href="/services/deta-vast/" class="cta-btn align-middle" aria-label="Deta Vast">Lees verder</a>
+                    </div>
+                </div>
+          </div>
+          <div class="tab-pane fade py-5" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+            <span class="icon mb-3 d-block flaticon-analysis"></span>
+              <h2 class="mb-4" style="color: #717C7D;">{{ services.title2 }}</h2>
+              <p>{{ services.description2 }}</p>
+              <div class="row">
+                    <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+                        <a href="/services/ws/" class="cta-btn align-middle" aria-label="Werving en Selectie">Lees verder</a>
+                    </div>
+                </div>
+          </div>
+          <div class="tab-pane fade py-5" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+            <span class="icon mb-3 d-block flaticon-web-design"></span>
+              <h2 class="mb-4" style="color: #717C7D;">{{ services.title3 }}</h2>
+              <p>{{ services.description3 }}</p>
+              <div class="row">
+                    <div class="col-12 cta-btn-container text-center" style="margin-top: 30px;">
+                        <a href="/services/relocation/" class="cta-btn align-middle" aria-label="Relocation">Lees verder</a>
+                    </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+
 
 <div class="brand-area">
         <div class="container">
@@ -203,5 +233,4 @@
     </div>
  </div>
 
- 
 {% endblock content %}
