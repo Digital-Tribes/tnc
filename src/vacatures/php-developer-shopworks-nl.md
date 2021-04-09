@@ -2,7 +2,7 @@
 layout: "layouts/vacature.njk"
 title: "PHP developer"
 description: "Shopworks, fullservice commerce partner in Utrecht"
-image: "/assets/img/blueredneon2.jpg"
+image: "/assets/img/wah.jpg"
 url: "/vacatures/php-developer-shopworks-nl/"
 ---
 

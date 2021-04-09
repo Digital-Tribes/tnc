@@ -2,7 +2,7 @@
 layout: "layouts/vacature.njk"
 title: "Digital Marketeer"
 description: "Wil jij Voetbal Internation (VI) digitaal in de markt zetten?"
-image: "/assets/img/blueredneon1.jpg"
+image: "/assets/img/wah.jpg"
 url: "/vacatures/digital-marketeer/"
 ---
 ![Digital Enterprises](/assets/img/logo/logo-de.png "Digital Enterprises Digital Marketeer")

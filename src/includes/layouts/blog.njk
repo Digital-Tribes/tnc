@@ -1,32 +1,32 @@
----
-layout: "layouts/simple2.njk"
-title: "Vacatures"
-description: "Wij werven voor de volgende vacatures:"
----
-   
+{% extends "layouts/simple2.njk" %}
+
 {% block postContent %}
 
-
-<div class="service-area">
+<div class="service-area spb bg3">
     <div class="container">
         
         <div class="row">
 
             {% for blog in collections.blogs %}
-            <div class="col-lg-4 col-md-6 pb-4">
-            <div class="icon-box">
-              <div class="icon">
-                <i style="color: #ff689b;"></i>
-              </div>
-              <h4 class="vacature-titel"><a href="{{ blog.data.url }}" style="color: #37b4ce">{{ blog.data.title }}</a></h4>
-              <p>{{ blog.data.description }}</p>
+            <div class="single-portfolio col-md-4">
+                <div class="inner">
+                    <div class="portfolio-img">
+                        <img style="border-radius: 10%; height:150px; width:350px;" decoding="async" src="{{ blog.data.image }} " alt="{{ blog.data.title }}" loading="lazy">
+                        <div class="hover-content">
+                            <div>
+                                <a href="{{ blog.data.url }}" class="button">Lees verder</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <a href="{{ blog.data.url }}"><h3>{{ blog.data.title }}</h3></a>
+                        <span>{{ blog.data.description }}</span>
+                    </div>
+                </div>
             </div>
-          </div>
             {% endfor %}
          </div>
     </div>
 </div>   
 
-
 {% endblock postContent %}
-

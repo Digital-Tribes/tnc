@@ -1,8 +1,8 @@
 ---
 layout: "layouts/blog.njk"
 title: "The Next Chapter"
-description: "Recruitment as a Service"
-image: "/assets/img/blueredneon1.jpg"
+description: "Wat kan het voor jouw bedrijf betekenen?"
+image: "/assets/img/nws.webp"
 url: "/blogs/the-next-chapter/"
 ---
 
@@ -21,5 +21,5 @@ Dit jaar werd de aanzet tot de herpositionering gegeven met de omvorming van de 
 
 Niels Jordens, Managing Director van The Next Chapter: “The Next Chapter staat voor transparantie, lagere tarieven en fees, maar wel de beste dienstverlening door echt hele goede recruiters. De founders hebben ieder meer dan 20 jaar concrete recruitment ervaring opgedaan aan bureau en de corporate kant. Wij kennen de markt, weten wat werkt en wat niet, zijn goed in arbeidsmarktcommunicatie, spreken de taal van de specialisten en kunnen bedrijven adviseren bij hun wervingsplan.” 
 
-###### <span style="color: #2d3666"> Wil je meer weten, een video call inplannen hierover of gelijk doorpakken? Bel dan 073-2004544. Mail je vraag via <a href="mailto:info@digitaltribes.nl">info@thenextchapter.nl</a></span>
+##### <span style="color: #2d3666"> Wil je meer weten, een video call inplannen hierover of gelijk doorpakken? Bel dan 073-2004544. Mail je vraag via <a href="mailto:info@digitaltribes.nl">info@thenextchapter.nl</a></span>
 

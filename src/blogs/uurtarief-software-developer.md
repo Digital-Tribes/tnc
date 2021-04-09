@@ -2,13 +2,12 @@
 layout: "layouts/blog.njk"
 title: "Uurtarief software developer"
 description: "Hoeveel betaal je voor een ervaren Nederlandstalige software developer"
-image: "/assets/img/blueredneon1.jpg"
-backgroundImage: "/assets/img/futuristic.jpg"
+image: "/assets/img/nws3.webp"
 url: "/blogs/uurtarief-software-developer/"
 ---
 
-## Tarieven van Nederlanstalige developers in Nederland kunnen behoorlijk hoog zijn. 
-### Waarom?
+## <span style="color:#2d3666;">Tarieven van Nederlanstalige developers in Nederland kunnen behoorlijk hoog zijn. 
+### <span style="color:#2d3666;">Waarom?
 
 De spanning op de ict-arbeidsmarkt is groot. Sinds jaren is er sprake van een zeer krappe arbeidsmarkt voor ict beroepen en deze krapte is alleen
 maar verder toegenomen. __Geen enkele andere beroepsrichting kent zo’n sterke mate van krapte__.  Er zijn minder dan 400.000 IT specialisten actief in Nederland.
@@ -41,4 +40,4 @@ Hoger opgeleide kandidaat met meer dan 10 jaar concrete werkervaring
 
 (bron: UWV factsheet ict beroepen 2019)
 
-### Wil je meer weten of een video call inplannen hierover? Bel dan 073-2004544. Mail je vraag via <a href="mailto:info@digitaltribes.nl">info@digitaltribes.nl</a> of gebruik de chat op onze website.</span>
+##### <span style="color:#2d3666;">Wil je meer weten of een video call inplannen hierover? Bel dan 073-2004544. Mail je vraag via <a href="mailto:info@digitaltribes.nl">info@digitaltribes.nl</a> of gebruik de chat op onze website.</span>
