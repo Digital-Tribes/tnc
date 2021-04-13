@@ -48,3 +48,5 @@ Alles wat we doen heeft als hoofddoel zoveel mogelijk mensen te bereiken en te v
     Een eigen ontwikkelingstraject met begeleiding die ruimte biedt om te groeien op persoonlijk vlak;
     De kans een grote rol te spelen in de marketingstrategie van onze titels
     Een bruisend kantoor op een mooie locatie in Amsterdam;
+
+###### <span style="color:#2d3666;"> Bij interesse bel 073-2004544 of mail je CV via <a style="color:#2d3666;" href="mailto:sollicitatie@thenextchapter.nl">sollicitatie@thenextchapter.nl</a></span>

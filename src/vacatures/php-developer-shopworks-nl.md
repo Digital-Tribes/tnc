@@ -1,6 +1,6 @@
 ---
 layout: "layouts/vacature.njk"
-title: "PHP developer"
+title: "PHP developer NL"
 description: "Shopworks, fullservice commerce partner in Utrecht"
 image: "/assets/img/wah.jpg"
 url: "/vacatures/php-developer-shopworks-nl/"
@@ -59,4 +59,4 @@ Een job bij een bedrijf waar de mensen centraal staan. Dit uit zich in een fijne
 
 
 
-###### <span style="color:#2d3666; font-family:PT Sans"> Bij interesse bel 073-2004544 of mail je CV via <a style="color:#2d3666;" href="mailto:sollicitatie@thenextchapter.nl">sollicitatie@thenextchapter.nl</a></span>
+###### <span style="color:#2d3666;"> Bij interesse bel 073-2004544 of mail je CV via <a style="color:#2d3666;" href="mailto:sollicitatie@thenextchapter.nl">sollicitatie@thenextchapter.nl</a></span>

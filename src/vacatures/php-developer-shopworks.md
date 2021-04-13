@@ -58,3 +58,5 @@ A job with a company that puts people first. This means a nice workplace with fr
     An inspiring work environment in a beautiful office;
     Room for your ideas and initiatives;
     Regular events with your colleagues.
+
+###### <span style="color:#2d3666;"> Bij interesse bel 073-2004544 of mail je CV via <a style="color:#2d3666;" href="mailto:sollicitatie@thenextchapter.nl">sollicitatie@thenextchapter.nl</a></span>
