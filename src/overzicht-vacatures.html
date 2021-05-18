@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://app.ismartrecruit.com/javax.faces.resource/theme.css.xhtml?ln=primefaces-sam"/>
+<link type="text/css" rel="stylesheet" href="https://app.ismartrecruit.com/javax.faces.resource/fa/font-awesome.css.xhtml" />
+<link type="text/css" rel="stylesheet" href="https://app.ismartrecruit.com/javax.faces.resource/font-awesome.css.xhtml?ln=css"/>
+<link type="text/css" rel="stylesheet" href="https://app.ismartrecruit.com/javax.faces.resource/ik.css.xhtml?ln=css" />
+<link type="text/css" rel="stylesheet" href="https://app.ismartrecruit.com/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.1" />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+<script type="text/javascript" src="https://app.ismartrecruit.com/javax.faces.resource/core.js.xhtml"></script>
+<script type="text/javascript" src="https://app.ismartrecruit.com/javax.faces.resource/components.js.xhtml"></script>
+
+<div class="open-jobwebsite"> 
+    <div class="col-md-12"> 
+        <div class="col-md-11"> 
+            <input type="text" placeholder="Enter text to filter" id="textbox_id" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"> 
+        </div> 
+        <div class="col-md-1" text-align="center"> 
+            <button class="btn btn-default" onclick="parameter()" style="height: 43px;box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.08);"> 
+                <i class="ui-icon-search" style="font-size: 18px;color: #c6c6c6;"></i> 
+            </button> 
+        </div>
+</div> 
+</div> 
+<div id="myFirstWidget"></div> 
+
+<script type="text/javascript"> var str = " "; var test2 = "https://app.ismartrecruit.com/openJobWebsite?tenantId=E7pdGhlbmV4dGNoYXB0ZXIubmxfV3M0dDZXMVpGbgQ9e&view=grid&col=2&lang=en"; function parameter() { str = document.getElementById('textbox_id').value; str = str.replaceAll(" ","00000");test2 = "https://app.ismartrecruit.com/openJobWebsite?tenantId=E7pdGhlbmV4dGNoYXB0ZXIubmxfV3M0dDZXMVpGbgQ9e&view=grid&col=2&lang=en&filterPara=" + str; $("#myFirstWidget").load(test2); } String.prototype.replaceAll = function(target, replacement) {return this.split(target).join(replacement);};</script> 
+
+<script type="text/javascript" src="https://app.ismartrecruit.com/js/applyNowWebsite.js"></script> 
+<script type="text/javascript"> var wage = document.getElementById("textbox_id");wage.addEventListener("keydown", function (e) {if (e.keyCode === 13) {parameter();}});</script>
