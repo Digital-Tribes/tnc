@@ -3,7 +3,7 @@ layout: "layouts/vacature.njk"
 title: "Team Lead | Lead Developer"
 description: "Consultancy bedrijf in een razend snel ontwikkelende omgeving"
 image: "/assets/img/wah3.jpg"
-url: "/vacatures/lead-developer/"
+url: "/vacatures/team-lead-lead-developer/"
 ---
 
 # <span style="color:#2d3666;">Functieomschrijving
