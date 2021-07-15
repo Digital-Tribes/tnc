@@ -1,13 +1,13 @@
 ---
 layout: "layouts/vacature.njk"
-title: "Lead Developer"
+title: "Team Lead | Lead Developer"
 description: "Consultancy bedrijf in een razend snel ontwikkelende omgeving"
 image: "/assets/img/wah3.jpg"
 url: "/vacatures/lead-developer/"
 ---
 
 # <span style="color:#2d3666;">Functieomschrijving
-De Lead Developer is verantwoordelijk voor de ontwikkeling en het beheer van het systeem. Samen met collega’s bedenk jij nieuwe functionaliteiten en verbeter je de bestaande functionaliteit en user experience. Jij ontwikkelt een visie voor het systeem.   
+De Team Lead | Lead Developer is verantwoordelijk voor de ontwikkeling en het beheer van het systeem. Samen met collega’s bedenk jij nieuwe functionaliteiten en verbeter je de bestaande functionaliteit en user experience. Jij ontwikkelt een visie voor het systeem.   
   
 Je bent verantwoordelijk voor het opstellen van een jaarplan inclusief (capaciteit)planning en het realiseren daarvan. Ook ben je verantwoordelijk voor de IT-techniek die wordt ingezet, zoals de architectuur van het systeem en de gebruikte technieken: programmeertalen, systeemveiligheid, hosting en meer.   
 Je bent een meewerkend voorman/vrouw, geeft leiding aan een team van drie medewerkers en levert zelf een hands-on bijdrage. Je bent in staat om inhoudelijk te sparren met collega’s én om jouw team te motiveren en enthousiasmeren.  
